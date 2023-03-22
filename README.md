@@ -10,7 +10,7 @@ Here's a quick start demo stack for Prometheus and Grafana with 1860 dashboard i
 - Virtualization app (ex. VirtualBox)
 
 ## Run
-Go to the project directory and run 'vagrant up' for first run. Next time run 'vagrant up --provision' (without it ansible playbooks will not applied). You can access to localhost:3000 in browser when command is done. Login to Grafana with admin/admin, skip password change (it will not be saved after restart).
+Go to the project directory and run 'vagrant up' for first run. Next time run 'vagrant up --provision' (without it ansible playbooks will not applied). You can access to http://localhost:3000 in browser when command is done. Login to Grafana with admin/admin, skip password change (it will not be saved after restart).
 
 ## Content
 - config directory with docker-composer.yml, Prometheus and Grafana configs
