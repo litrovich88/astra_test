@@ -74,9 +74,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "file", source: "./config", destination: "$HOME/config" 
 
-#  config.vm.provision "shell",
-#    inline: "mv /tmp/config/ $HOME"
-
   config.vm.provision :ansible do |ansible|
 #    ansible.limit = "all"
     ansible.playbook = "setup.yml"
