@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+- name: 'Docker'
+  ansible.builtin.import_playbook: docker.yml
+
+- name: 'node_exporter'
+  ansible.builtin.import_playbook: node_exporter.yml
+
+- name: 'up containers'
+  ansible.builtin.import_playbook: up_ct.yml

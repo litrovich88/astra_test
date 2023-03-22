@@ -1,0 +1,11 @@
+---
+- name: 'Start containers'
+  hosts: all
+  become: true
+  tasks:
+    - name: 'Run Docker compose'
+      community.docker.docker_compose:
+        project_src: config
+        files:
+          - docker-compose.yml
+
